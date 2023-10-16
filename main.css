@@ -6,7 +6,7 @@
 
 body {
   margin-top: 200px;
-  background-color: lightgrey;
+  background-color: rgba(120, 46, 46, 0.816);
 }
 
 .calculator {
@@ -22,11 +22,10 @@ body {
   background-color: white;
   grid-template-columns: repeat(4, 80px);
   grid-template-rows: minmax(80px, auto) repeat(4,80px);
-
 }
 
 #output {
-  border-style: groove;
+  border-style: solid;
   border-width: 1px;
   border-color: white;
   grid-column: span 3;
@@ -37,7 +36,7 @@ body {
 }
 
 .numberButton {
-  border-style: groove;
+  border-style: solid;
   border-width: 1px;
   border-color: white;
   background-color: rgb(99, 231, 99);
@@ -46,7 +45,7 @@ body {
 }
 
 .operationButton {
-  border-style: groove;
+  border-style: solid;
   border-width: 1px;
   border-color: white;
   background-color: rgb(128, 231, 128);
@@ -55,7 +54,7 @@ body {
 }
 
 #clearButton {
-  border-style: groove;
+  border-style: solid;
   border-width: 1px;
   border-color: white;
   background-color: rgb(99, 231, 99);
@@ -73,7 +72,7 @@ body {
 } */
 
 #equalsButton {
-  border-style: groove;
+  border-style: solid;
   border-width: 1px;
   border-color: white;
   background-color: rgb(99, 231, 99);

@@ -1,14 +1,40 @@
 let outputWindow = document.getElementById('output');
-let numbersArray = document.querySelectorAll('button');
+let numbersOperatorsArray = document.querySelectorAll('.numberButton, .operationButton');
 // let operationArray = document.querySelectorAll('.operationButton');
 let clearButton = document.getElementById('clearButton');
-let enterButton = document.getElementById('enterButton');
-let calculate = outputWindow;
+let calculate = document.getElementById('equalsButton');
 
 
-for (let el of numbersArray) {
-  el.addEventListener('click', (target) => outputWindow.innerText += el.innerText);
+for (let button of numbersOperatorsArray) {
+  button.addEventListener('click', (target) => outputWindow.innerText += button.innerText);
 }
+
+calculate.addEventListener('click', (target) => {
+  let answer = eval(outputWindow.innerText);
+  console.log (answer);
+}
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // for (let el of operationArray) {
 //   el.addEventListener ('click', (target) => outputWindow.innerText += el.innerText);
 // }
