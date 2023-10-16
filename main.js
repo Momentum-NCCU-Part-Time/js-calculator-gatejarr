@@ -1,6 +1,5 @@
 let outputWindow = document.getElementById('output');
 let numbersOperatorsArray = document.querySelectorAll('.numberButton, .operationButton');
-// let operationArray = document.querySelectorAll('.operationButton');
 let clearButton = document.getElementById('clearButton');
 let calculate = document.getElementById('equalsButton');
 
@@ -33,14 +32,6 @@ calculate.addEventListener('click', (target) => {
 
 
 
-
-
-// for (let el of operationArray) {
-//   el.addEventListener ('click', (target) => outputWindow.innerText += el.innerText);
-// }
-
-//eval(calculate) {
-//}
 
 // for (let el of clearButton) {
 //   el.addEventListener ('click', (target) => outputWindow.innerText = "");
