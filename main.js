@@ -3,28 +3,23 @@ let numbersOperatorsArray = document.querySelectorAll('.numberButton, .operation
 let calculate = document.getElementById('equalsButton');
 let newOperation = false;
 
-//  TO-DO
-//	figure out how limit output window to 22 numbers and operations
-//	figure out how to start a new calculation when a number button is clicked after equals,
-//	but continue current calculation if an operator button is clicked
-
 //Output Window code & code to start new operation
 for (let button of numbersOperatorsArray) {
   button.addEventListener('click', (target) => {
-    if (button.classList.contains('numberButton') && newOperation)
-    {
-      outputWindow.innerText = button.innerText;
-      newOperation = false;
-    }
+   
+    if (outputWindow.innerText.length <= 21 ) {
+      if (button.classList.contains('numberButton') && newOperation) {
+        outputWindow.innerText = button.innerText;
+        }
     else {
       outputWindow.innerText += button.innerText;
     }
+    newOperation = false;
+   }
   })
 }
 
-//  Calculations code, still won't keep current calc going with an operator button click
-//  Starts new calc when number button clicked after equals button
-//  Replaces "x" character with asterisk (*) to force multiplication operation
+//  Calculations code
 calculate.addEventListener('click', (target) => {
   let answer = eval(outputWindow.innerText.replace("x", "*"));
   outputWindow.innerText = answer;
