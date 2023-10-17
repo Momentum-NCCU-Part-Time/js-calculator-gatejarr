@@ -5,7 +5,7 @@
 }
 
 body {
-  margin-top: 200px;
+  margin-top: 100px;
   background-color: burlywood;
   background-image: url("chris-liverani-rD2dc_2S3i0-unsplash.jpg");
 }
@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 80vw;
+  width: 50vw;
   height: auto;
 }
 
