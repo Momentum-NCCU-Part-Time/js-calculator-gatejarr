@@ -6,14 +6,16 @@ for (let button of numbersOperatorsArray) {
   button.addEventListener('click', (target) => outputWindow.innerText += button.innerText);
 }
 
+//  limit output window to 17 numbers and operations
+
 calculate.addEventListener('click', (target) => {
   let answer = eval(outputWindow.innerText);
-  outputWindow.innerText = answer.innerText;
+  outputWindow.innerText = answer;
   console.log (answer);
 }
 )
 
-document.getElementById('clearButton').addEventListener('click', function() {
+document.getElementById('allClearButton').addEventListener('click', function() {
   location.reload();
 }
 )

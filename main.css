@@ -6,7 +6,7 @@
 
 body {
   margin-top: 200px;
-  background-color: beige;
+  background-color: burlywood;
 }
 
 .calculator {
@@ -19,7 +19,6 @@ body {
 
 .keypad {
   display: grid;
-  background-color: white;
   grid-template-columns: repeat(4, 80px);
   grid-template-rows: minmax(80px, auto) repeat(4,80px);
 }
@@ -53,7 +52,7 @@ body {
   font-size: 20px;
 }
 
-#clearButton {
+#allClearButton {
   border-style: solid;
   border-width: 1px;
   border-color: white;
