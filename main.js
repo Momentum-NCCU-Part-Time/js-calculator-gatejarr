@@ -6,7 +6,7 @@ for (let button of numbersOperatorsArray) {
   button.addEventListener('click', (target) => outputWindow.innerText += button.innerText);
 }
 
-//  limit output window to 17 numbers and operations
+//  limit output window to 22 numbers and operations
 
 calculate.addEventListener('click', (target) => {
   let answer = eval(outputWindow.innerText);
