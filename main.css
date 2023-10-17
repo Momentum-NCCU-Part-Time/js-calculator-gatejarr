@@ -20,14 +20,14 @@ body {
 .keypad {
   display: grid;
   grid-template-columns: repeat(4, 80px);
-  grid-template-rows: minmax(80px, auto) repeat(4,80px);
+  grid-template-rows: minmax(80px, auto) repeat(5,80px);
 }
 
 #output {
   border-style: solid;
   border-width: 1px;
   border-color: white;
-  grid-column: span 3;
+  grid-column: span 4;
   text-align: right;
   font-size: 28px;
   background-color: rgb(99, 231, 99);
@@ -56,6 +56,17 @@ body {
   border-style: solid;
   border-width: 1px;
   border-color: white;
+  grid-column: span 2;
+  background-color: rgb(99, 231, 99);
+  color: white;
+  font-size: 20px;
+}
+
+#clearButton {
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  grid-column: span 2;
   background-color: rgb(99, 231, 99);
   color: white;
   font-size: 20px;
