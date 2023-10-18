@@ -6,6 +6,7 @@ let newOperation = false;
 //Output Window code & code to start new operation
 for (let button of numbersOperatorsArray) {
   button.addEventListener('click', (target) => {
+    console.log (button.textContent)
     if (outputWindow.innerText.length <= 21 ) {
       if (button.classList.contains('numberButton') && newOperation) {
         outputWindow.innerText = button.innerText;
