@@ -5,9 +5,9 @@
 }
 
 body {
-  margin: 200px;
+  margin: 100px;
   /* background-color: burlywood; */
-  /* background-image: url("chris-liverani-rD2dc_2S3i0-unsplash.jpg"); */
+  background-image: url("chris-liverani-rD2dc_2S3i0-unsplash.jpg");
 }
 
 .calculator {
@@ -15,67 +15,79 @@ body {
   justify-content: center;
   align-content: center;
   width: 350px;
-  height: 600px;
+  height: 610px;
   background-color: blue;
+  border-radius: 5%;
   padding: 10px;
-}
-
-h2 {
-  grid-column: span 4;
 }
 
 .keypad {
   display: grid;
   grid-template-columns: repeat(4, 80px);
   grid-template-rows: minmax(80px, auto) repeat(6,80px);
+  gap: 5px;
+}
+
+h3 {
+  grid-column: span 3;
+  color: white;
+}
+
+h2 {
+  grid-column: span 1;
+  color: white;
+  text-align: right;
 }
 
 #output {
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
+  border: solid 1px white;
+  border-radius: 10%;
   grid-column: span 4;
   text-align: right;
   font-size: 28px;
-  background-color: lightgray;
+  background-color: rgb(168, 168, 168);
   color: black;
 }
 
 .numberButton {
-  border-style: solid;
-  border-width: 1px;
-  border-color: gray;
+  border: solid 1px gray;
   background-color: white;
   border-radius: 15%;
   color: blue;
   font-size: 20px;
 }
 
+.numberButton:hover {
+  color: red;
+}
+
 .operationButton {
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
+  border: solid 1px gray;
   background-color: red;
   border-radius: 15%;
   color: white;
   font-size: 20px;
+}
+
+.operationButton:hover {
+  color: blue;
 }
 
 #allClearButton {
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
+  border: solid 1px gray;
   grid-column: span 2;
   background-color: red;
   border-radius: 15%;
   color: white;
   font-size: 20px;
+}
+
+#allClearButton:hover {
+  color: blue;
 }
 
 #clearButton {
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
+  border: solid 1px gray;
   grid-column: span 2;
   background-color: red;
   border-radius: 15%;
@@ -83,12 +95,18 @@ h2 {
   font-size: 20px;
 }
 
+#clearButton:hover {
+  color: blue;
+}
+
 #equalsButton {
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
+  border: solid 1px gray;
   background-color: red;
   border-radius: 15%;
   color: white;
   font-size: 20px;
+}
+
+#equalsButton:hover {
+  color: blue;
 }
